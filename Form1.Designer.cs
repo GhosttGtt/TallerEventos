@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ControlTareas));
             txtNombreTarea = new TextBox();
             flowPanelTareaPendientes = new FlowLayoutPanel();
-            btnEliminarUltimaTarea = new Button();
             flowPanelTareaEnProgreso = new FlowLayoutPanel();
             flowPanelTareaFinalizada = new FlowLayoutPanel();
             label1 = new Label();
@@ -67,22 +66,6 @@
             flowPanelTareaPendientes.Size = new Size(253, 369);
             flowPanelTareaPendientes.TabIndex = 2;
             flowPanelTareaPendientes.WrapContents = false;
-            // 
-            // btnEliminarUltimaTarea
-            // 
-            btnEliminarUltimaTarea.BackColor = Color.Red;
-            btnEliminarUltimaTarea.Cursor = Cursors.Hand;
-            btnEliminarUltimaTarea.FlatAppearance.BorderSize = 0;
-            btnEliminarUltimaTarea.FlatStyle = FlatStyle.Flat;
-            btnEliminarUltimaTarea.ForeColor = SystemColors.ControlLightLight;
-            btnEliminarUltimaTarea.Location = new Point(17, 493);
-            btnEliminarUltimaTarea.Margin = new Padding(3, 2, 3, 2);
-            btnEliminarUltimaTarea.Name = "btnEliminarUltimaTarea";
-            btnEliminarUltimaTarea.Size = new Size(253, 25);
-            btnEliminarUltimaTarea.TabIndex = 3;
-            btnEliminarUltimaTarea.Text = "Eliminar última tarea pendiente";
-            btnEliminarUltimaTarea.UseVisualStyleBackColor = false;
-            btnEliminarUltimaTarea.Click += btnEliminarUltimaTarea_Click;
             // 
             // flowPanelTareaEnProgreso
             // 
@@ -199,7 +182,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(834, 535);
+            ClientSize = new Size(839, 505);
             Controls.Add(Selector);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -211,7 +194,6 @@
             Controls.Add(label1);
             Controls.Add(flowPanelTareaFinalizada);
             Controls.Add(flowPanelTareaEnProgreso);
-            Controls.Add(btnEliminarUltimaTarea);
             Controls.Add(flowPanelTareaPendientes);
             Controls.Add(txtNombreTarea);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -227,7 +209,6 @@
 
         private TextBox txtNombreTarea;
         private FlowLayoutPanel flowPanelTareaPendientes;
-        private Button btnEliminarUltimaTarea;
         private FlowLayoutPanel flowPanelTareaEnProgreso;
         private FlowLayoutPanel flowPanelTareaFinalizada;
         private Label label1;
