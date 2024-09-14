@@ -11,12 +11,7 @@ namespace TellerEventos
         public ControlTareas()
         {
             InitializeComponent();
-            btnEliminarUltimaTarea.Enabled = false;
-            if (!btnEliminarUltimaTarea.Enabled)
-            {
-                btnEliminarUltimaTarea.BackColor = Color.LightGray;
-                btnEliminarUltimaTarea.ForeColor = Color.White;
-            }
+          
             UpdateItemCounts();
 
             Selector.Items.Add(new ComboBoxItem("Pendiente", flowPanelTareaPendientes));
@@ -36,19 +31,7 @@ namespace TellerEventos
 
             int countPanel1 = flowPanelTareaPendientes.Controls.Count;
             contador1.Text = $"{countPanel1}";
-            if (countPanel1 > 0)
-            {
-                btnEliminarUltimaTarea.Enabled = true;
-                btnEliminarUltimaTarea.BackColor = Color.Red;
-                btnEliminarUltimaTarea.ForeColor = Color.White;
-                
-            }
-            else
-            {
-                btnEliminarUltimaTarea.Enabled = false;
-                btnEliminarUltimaTarea.BackColor = Color.LightGray;
-                btnEliminarUltimaTarea.ForeColor = Color.White;
-            }
+            
 
             int countPanel2 = flowPanelTareaEnProgreso.Controls.Count;
             contador2.Text = $"{countPanel2}";
@@ -203,6 +186,11 @@ namespace TellerEventos
         }
 
         private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombreTarea_TextChanged(object sender, EventArgs e)
         {
 
         }

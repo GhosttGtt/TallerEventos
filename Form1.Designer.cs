@@ -53,6 +53,7 @@
             txtNombreTarea.PlaceholderText = "Ingrese su tarea";
             txtNombreTarea.Size = new Size(253, 23);
             txtNombreTarea.TabIndex = 0;
+            txtNombreTarea.TextChanged += txtNombreTarea_TextChanged;
             txtNombreTarea.KeyDown += enviarConEnter2;
             // 
             // flowPanelTareaPendientes
